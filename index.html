@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Microsoft_Sticky_Notes_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+       <div class="sticky-container"></div>
+       <div class="sticky-form">
+            <form class="input-form">
+                <label for="sticky-title">Title for sticky:</label>
+                <input type="text" id="sticky-title" maxlength="15">
+                <label for="">Write something down:</label>
+                <textarea maxlength="100" id="sticky-content" rows="8" cols="24"></textarea>
+                <button class="sticky-btn">stick it !</button>
+            </form>
+       </div>
+       <script src="./src/app.js"></script>
+</body>
+</html>

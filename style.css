@@ -1,0 +1,120 @@
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+body{
+     min-height: 100vh;
+     background-color: #0093E9;
+     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+     font-family:"Roboto", sans-serif;
+    }
+.drag{
+     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sticky{
+      position: absolute;
+      background-color: #85FFBD;
+      background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+      width: 252px;
+      height: auto;
+      padding: 1rem;
+      cursor: grab;
+      border-radius: 1px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5)
+}
+.sticky  h3{
+       text-transform: uppercase;
+       font-weight: 600;
+       border-bottom: 1px dashed red;
+       padding-bottom: 1rem;
+       letter-spacing: 1px;
+       text-align: left;
+       min-height: 1.3rem;
+}
+.sticky p{
+     padding: 1rem 0;
+     font-size: 1rem;
+     max-width: 252px;
+     min-height: 9rem;
+     overflow-x: hidden !important;
+     word-wrap: break-word;
+}
+.close-btn{ 
+     position: absolute;
+     top: 0.2rem;
+     right: 0.2rem;
+     color: #fff;
+     display: grid;
+     font-size: 1rem;
+     padding: 0.25rem 0.5rem;
+     place-items: center;
+     cursor: pointer;
+     border-radius: 2px;
+     border-color: transparent;
+     background: #333;
+}
+.edit-btn{
+     background: none;
+     border: none;
+     color: #fff;
+     font-size: 1rem;
+     cursor: pointer;
+     outline: none;
+}
+.sticky-form{
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+}
+label{
+     display: block;
+     letter-spacing: 2px;
+     font-weight: 400;
+     margin-bottom: 0.5rem;
+     color: #fff;
+     user-select: none;
+}
+input{
+     border: 4px dashed cyan;
+     width: 100%;
+     background: #f0f9ff44;
+     padding: 0.5rem 1rem;
+     margin-bottom: 1rem;
+     font-size: 1rem;
+     outline: none;
+}
+input:focus{
+      border: 4px dashed greenyellow;
+}
+textarea{
+     width: 100%;
+     height: 100%;
+     box-sizing: border-box;
+     border: 4px dashed cyan;
+     background: #f0f9ff44;
+     resize: none;
+     outline: none;
+     font-size: 1rem;
+     padding: 0.375rem 0.75rem;
+}
+textarea:focus{
+      border: 4px dashed greenyellow;
+}
+.sticky-btn{
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.37rem 0.75rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: linear-gradient( to right, yellow, orange);
+    border-color: transparent;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
